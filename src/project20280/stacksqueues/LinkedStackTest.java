@@ -17,6 +17,7 @@ class LinkedStackTest {
 
     @Test
     void testIsEmpty() {
+
         LinkedStack<Integer> s = new LinkedStack<>();
         for (int i = 0; i < 10; ++i)
             s.push(i);
@@ -24,6 +25,7 @@ class LinkedStackTest {
             s.pop();
         }
         assertTrue(s.isEmpty());
+
     }
 
     @Test

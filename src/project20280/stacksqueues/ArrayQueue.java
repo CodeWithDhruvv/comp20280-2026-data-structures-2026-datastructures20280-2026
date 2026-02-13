@@ -31,6 +31,7 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public void enqueue(E e) {
+
         //TODO
         if (size == data.length) {
             throw new IllegalStateException("Queue is full");
@@ -41,7 +42,8 @@ public class ArrayQueue<E> implements Queue<E> {
     }
 
     @Override
-    public E first() {
+    public E first()
+    {
         return isEmpty() ? null : data[front];
     }
 
